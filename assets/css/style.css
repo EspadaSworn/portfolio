@@ -9,6 +9,11 @@ header {
     background-color: bisque;
 }
 
+h1 {
+    display:inline;
+    background-color:aqua;
+}
+
 nav {
     display: inline-flex;
     list-style: none;
@@ -41,8 +46,8 @@ article {
 
 aside {
     flex-basis: 30%;
-    border-right: solid black 2px;
-    margin-right: 20px;
+    border-right: solid rgb(230, 171, 24) 3px;
+    margin: 5px 20px 5px 0;
     text-align: right;
     padding: 10px;
 }
@@ -55,14 +60,26 @@ section {
 }
 
 section :first-child{
-    flex-basis:100%;
+    flex-basis:92%;
+    height: 275px;
 }
 
 project {
-    border: solid 1px;
-    padding: 10px;
-    flex-basis: 50%
+    border: 3px solid rgb(230, 171, 24);
+    margin: 5px;
+    flex-basis: 45%;
+    height:100px;
 }
 
+
+h3{
+    display:inline;
+    background-color:rgb(230, 171, 24) ;
+}
+
+h3+p {
+    display:inline-flex;
+    background-color:rgb(230, 171, 24) ;
+}
 
 790 pixels max
