@@ -91,6 +91,17 @@ div {
     background-size: 100%;
 }
 
+a{
+    display:block;
+}
+
+span{
+    display:flex;
+    display:block;
+
+    width: 10px;
+    max-width: 30%;
+}
 
 h3{
     display:inline;
@@ -98,8 +109,9 @@ h3{
 }
 
 h3+p {
-    display:inline-flex;
+    display:block;
     background-color:rgb(230, 171, 24) ;
+
 }
 
 #Contact-info ul{
@@ -107,7 +119,6 @@ h3+p {
     list-style: none;
     flex-basis: 60%;
     justify-content: space-evenly;
-
 }
 
 @media (max-width:550px){
@@ -122,15 +133,15 @@ h3+p {
         border-right: none;
         border-bottom: solid rgb(230, 171, 24) 3px;
         min-width:40%;
-        text-align: center;
-        
+        text-align: center;    
     }
     p{
         width:100%;
         display:block;
 
     }
-    
-
-
+    #Contact-info ul{
+        display: block;
+        text-align: center;
+    }
 }
