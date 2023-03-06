@@ -1,4 +1,4 @@
-* { 
+* { border:dashed red 1px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -42,6 +42,7 @@ nav li {
 }
 
 
+
 body {
     background-color: blueviolet;
 }
@@ -80,7 +81,7 @@ section :first-child{
     height: 275px;
 }
 
-project {
+div {
     border: 3px solid rgb(230, 171, 24);
     margin: 5px;
     flex-basis: 45%;
@@ -101,20 +102,35 @@ h3+p {
     background-color:rgb(230, 171, 24) ;
 }
 
-contact{
-    display: inline-flex;
+#Contact-info ul{
+    display: flex;
     list-style: none;
-    justify-content: center; /*not working*/
+    flex-basis: 60%;
+    justify-content: space-evenly;
 
 }
 
 @media (max-width:550px){
-    project{
+    div{
         flex-basis:92%;
+    }
+    article{
+        flex-wrap:wrap;
+        justify-content: center;
     }
     aside{
         border-right: none;
         border-bottom: solid rgb(230, 171, 24) 3px;
+        min-width:40%;
+        text-align: center;
+        
     }
+    p{
+        width:100%;
+        display:block;
+
+    }
+    
+
 
 }
