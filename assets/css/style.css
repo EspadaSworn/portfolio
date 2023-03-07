@@ -36,12 +36,10 @@ nav li {
     background-position: center;
 }
 
-.hero img {
-    max-height: 150px;
-    max-width: 110px;
+.hero img{
+    max-height:150px;
+    max-width:110px;
 }
-
-
 
 body {
     background-color: blueviolet;
@@ -78,7 +76,7 @@ p {
 
 .website {
     flex-basis: 92%;
-    height: 200px;
+    height: 250px;
 }
 
 div {
@@ -91,33 +89,25 @@ div {
     background-size: 100%;
 }
 
-a {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    height: 10px;
-    position: relative;
-    top: 25%;
-}
-
-a * {
-    width: 60%;
-}
-
-span {
-    display: block;
-    width: 10px;
-    max-width: 30%;
-}
-
 h3 {
     background-color: rgb(230, 171, 24);
+    position: relative;
+    top:40%;
 }
 
 h3+p {
     display: block;
     background-color: rgb(230, 171, 24);
+    position: relative;
+    top:40%;
+}
 
+#Works section a:first-child {
+    flex: 1 1 100%;
+}
+
+#Works section a {
+    flex: 1 1 50%;
 }
 
 #Contact-info ul {
@@ -137,6 +127,10 @@ h3+p {
         justify-content: center;
     }
 
+    #Works section a{
+        flex: 1 1 100%;
+    }
+
     aside {
         border-right: none;
         border-bottom: solid rgb(230, 171, 24) 3px;
@@ -146,6 +140,7 @@ h3+p {
 
     #Contact-info ul {
         display: block;
-        text-align: center;
+        text-align:center;
+     
     }
 }
