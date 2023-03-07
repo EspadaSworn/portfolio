@@ -41,6 +41,13 @@ nav li {
     max-width:110px;
 }
 
+.hero h2{
+   position: absolute;
+   top: 78px;
+   right:0;
+   background-color: aqua;
+}
+
 body {
     background-color: blueviolet;
 }
